@@ -2,6 +2,21 @@
 <h3 align="center">Full Stack Web Developer | MERN | PHP | AI Enthusiast</h3>
 
 ---
+## 🎓 Education  
+
+- 🎓 **Master of Computer Applications (MCA)**  
+  *Aligarh Muslim University (AMU)*  
+  *2025 – Present*
+
+- 🎓 **Bachelor of Computer Applications (BCA)**  
+  *Teerthanker Mahaveer University (TMU), Moradabad*  
+  **CGPA: 9.69 / 10**
+
+- 🎖️ **Certifications (IIT Bombay)**  
+  - C Programming  
+  - C++ Programming  
+  - Computer Fundamentals  
+---
 
 ## 🌐 Connect With Me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/murshad-ali-009948299/)

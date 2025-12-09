@@ -6,22 +6,28 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v3
 
       - name: Generate Snake
         uses: Platane/snk@v3
         with:
           github_user_name: murshadali
-          outputs: dist/github-contribution-grid-snake.svg
+          outputs: dist/snake.svg
 
-      - name: Push Snake Animation to output branch
-        uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Upload Snake
+        uses: actions/upload-artifact@v3
         with:
-          branch: output
-          commit_message: "Generated Snake Animation"
-          file_pattern: dist/github-contribution-grid-snake.svg
+          name: snake
+          path: dist/snake.svg
+
+      - name: Push Snake to output branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+          publish_branch: output

@@ -33,7 +33,7 @@
 
 ## 🐍 Contribution Snake
 
-![snake gif](https://raw.githubusercontent.com/murshadali/murshadali/output/snake.svg)
+![snake gif](https://raw.githubusercontent.com/murshadali/murshadali/output/dist/snake.svg)
 
 
 ---

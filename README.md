@@ -2,7 +2,9 @@
 <h3 align="center">Full Stack Web Developer | MERN | PHP | AI Enthusiast</h3>
 
 ---
+![Profile Views](https://komarev.com/ghpvc/?username=murshadali&color=brightgreen)
 
+---
 ## 🌐 Connect With Me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/murshad-ali-009948299/)
 [![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/murshadali)

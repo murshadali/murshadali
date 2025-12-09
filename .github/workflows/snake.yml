@@ -1,4 +1,5 @@
 name: Generate Snake Animation
+
 on:
   schedule:
     - cron: "0 */6 * * *"
@@ -7,19 +8,20 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: Platane/snk@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Generate Snake
+        uses: Platane/snk@v3
         with:
           github_user_name: murshadali
           outputs: dist/github-contribution-grid-snake.svg
 
-      - uses: actions/upload-artifact@v3
+      - name: Push Snake Animation to output branch
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          name: snake
-          path: dist/github-contribution-grid-snake.svg
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist
+          branch: output
+          commit_message: "Generated Snake Animation"
+          file_pattern: dist/github-contribution-grid-snake.svg
